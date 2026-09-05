@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FAF6E8;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-card-hover: #FDFBF3;
+    --border-subtle: #E8DEB7;
+    --border-accent: rgba(239, 105, 5, 0.4);
+    --accent-crimson: #8B2626;
+    --accent-orange: #EF6905;
+    --accent-cream: #F1E5A1;
+    --accent-forest: #486C2F;
+    --color-text-primary: #2A1A18;
+    --color-text-secondary: #6A5652;
+    --color-text-dark: #1F1210;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--color-text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Warm data grid & analytics background patterns using the palette */
+.data-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(139, 38, 38, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 38, 38, 0.08) 1px, transparent 1px);
+}
+
+.intelligence-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(239, 105, 5, 0.15) 0%, rgba(241, 229, 161, 0.35) 50%, transparent 75%);
+}
+
+.subtle-radial {
+  background: radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(241, 229, 161, 0.35), transparent 40%);
+}
+
+/* Custom Scrollbar for Crimson, Orange, Cream & Forest UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8DEB7;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EF6905;
+}
+
+/* Animated Pulse Line */
+@keyframes pulseLine {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-line {
+  animation: pulseLine 3s ease-in-out infinite;
+}
+
+
