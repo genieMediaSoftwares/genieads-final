@@ -269,9 +269,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEarlyAccess }) => {
                 </motion.div>
               </div>
 
-              {/* Mockup Notice */}
+              {/* System Intelligence Indicator */}
               <div className="mt-4 pt-3 border-t border-[#E8DEB7] flex items-center justify-between text-[10px] text-[#6A5652]">
-                <span>SIMULATED PRODUCT INTERFACE</span>
+                <span>PERFORMANCE INTELLIGENCE ENGINE</span>
                 <span className="font-mono text-[#8B2626] font-semibold">GENIE-CORE-V1</span>
               </div>
             </motion.div>

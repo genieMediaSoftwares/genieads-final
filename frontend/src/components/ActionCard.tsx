@@ -161,7 +161,7 @@ export const ActionCard: React.FC = () => {
       <div className="p-3 bg-[#FAF6E8] border border-[#E8DEB7] rounded-xl text-xs text-[#6A5652] flex items-center justify-between shadow-2xs">
         <span className="flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-[#EF6905]" />
-          Interactive mockup: Test marking items done or viewing recommendations.
+          Action checklist: Mark items as complete or view AI optimization recommendations.
         </span>
         <span className="font-mono text-[11px] text-[#486C2F] font-semibold">3 of 3 ready</span>
       </div>

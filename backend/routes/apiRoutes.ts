@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { submitEarlyAccess, getEarlyAccessStats } from '../controllers/earlyAccessController';
 import { getHealth } from '../controllers/healthController';
 import { getArchitectureContract } from '../controllers/previewController';
-import { fetchMetaProfile } from '../controllers/metaController';
+import { fetchMetaProfile, diagnosePost } from '../controllers/metaController';
 import { 
   getAdminMetrics, 
   getAdminUsers, 
@@ -27,6 +27,7 @@ apiRouter.get('/early-access/stats', getEarlyAccessStats);
 
 // Real Meta Graph API Profile & Followers Integration
 apiRouter.post('/meta/fetch-profile', fetchMetaProfile);
+apiRouter.post('/meta/diagnose-post', diagnosePost);
 
 // Admin Control Center Routes (Real Live Telemetry, Users, Subscriptions, Payments & Custom Form Submissions)
 apiRouter.get('/admin/metrics', getAdminMetrics);

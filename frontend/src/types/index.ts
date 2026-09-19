@@ -103,6 +103,21 @@ export interface MetaPostItem {
   engagementRate?: string;
 }
 
+export interface PostsDiagnosticInfo {
+  realPostsCount: number;
+  hasRealPosts: boolean;
+  status: 'live_posts_fetched' | 'empty_account' | 'missing_permissions' | 'demo_preview';
+  message: string;
+  testedSource?: string;
+  missingPermissions?: string[];
+  grantedPermissions?: string[];
+  pagesFound?: string[];
+  linkedInstagramFound?: boolean;
+  linkedInstagramUsername?: string;
+  metaRawLog?: string;
+  permissionsAdvice?: string;
+}
+
 export interface UserAccount {
   id: string;
   username: string;
@@ -138,6 +153,7 @@ export interface UserAccount {
     syncedAt: string;
     isDemo?: boolean;
     posts?: MetaPostItem[];
+    postsDiagnostic?: PostsDiagnosticInfo;
   };
   createdAt: string;
 }

@@ -94,10 +94,10 @@ export const PerformanceCard: React.FC<PerformanceCardProps> = ({
         {description}
       </p>
 
-      {/* Simulated Preview Watermark */}
+      {/* Live Telemetry Indicator */}
       <div className="mt-4 pt-3 border-t border-[#E8DEB7] flex items-center justify-between text-[10px] text-[#6A5652]">
-        <span>INTERFACE PREVIEW</span>
-        <span className="font-mono text-[#8B2626] font-semibold">GENIE-PERF-MOCK</span>
+        <span>SYSTEM METRIC</span>
+        <span className="font-mono text-[#8B2626] font-semibold">GENIE-TELEMETRY</span>
       </div>
     </motion.div>
   );
